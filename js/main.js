@@ -24,7 +24,7 @@
             .center([0, 32.9])
             .rotate([85.30, 0, 0])
             .parallels([29.5, 45.5])
-            .scale(1643)
+            .scale(1600)
             .translate([width / 2, height / 2]);
 
         var path = d3.geoPath()
@@ -52,7 +52,7 @@
                 .attr("class", "countries")
                 .attr("d", path);
 
-            console.log(statesGeoJson)
+            //console.log(statesGeoJson)
             statesGeoJson = joinData(statesGeoJson, csvData);
 
             var colorScale = makeColorScale(csvData);
