@@ -206,7 +206,7 @@
             })
             .attr("width", chartInnerWidth / csvData.length - 1)
             .on("mouseover", function (event, d) {
-                console.log(d)
+                //console.log(d)
                 highlight(d);
             })
             .on("mouseout", function (event, d) {
